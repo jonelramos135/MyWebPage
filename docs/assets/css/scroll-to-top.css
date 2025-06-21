@@ -1,0 +1,35 @@
+/* Scroll-to-top button styles */
+#scroll-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* 20px from the bottom */
+    right: 30px; /* 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #0d6efd; /* Bootstrap primary blue */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    width: 50px; /* Make it a fixed width */
+    height: 50px; /* Make it a fixed height */
+    padding: 0; /* Remove padding */
+    border-radius: 50%; /* Make it circular */
+    font-size: 24px; /* Increase font size for better visibility of arrow */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    opacity: 0.8; /* Initial opacity */
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+}
+
+#scroll-to-top:hover {
+    opacity: 1; /* Full opacity on hover */
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* White glowing effect */
+}
+
+/* Arrow icon */
+#scroll-to-top::after {
+    content: '\2191'; /* Up arrow character */
+    font-weight: bold; /* Make the arrow bolder */
+} 
